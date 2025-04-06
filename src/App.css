@@ -1,0 +1,81 @@
+/* Container principal da aplicação */
+.app-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #1C1C1C;  /* Preto para o fundo */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título da página */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #FF4655;
+}
+
+/* Container que envolve os cards de agentes */
+.agents-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Estilo de cada card de agente */
+.agent-card {
+  background-color: #2A2A2A; /* Fundo escuro para os cards */
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  border: 2px solid #9B4DFF;
+}
+
+.agent-card:hover {
+  transform: scale(1.05);
+  border-color: #00D4FF; /* Verde neon quando o card é hover */
+}
+
+/* Imagem do agente*/
+.agent-imagem {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Informações do agente (nome e descrição) */
+.agent-info h2 {
+  font-size: 1.6rem;
+  color: #FF4655;
+  margin-bottom: 10px;
+}
+
+.agent-info p {
+  font-size: 1rem;
+  color: #D1D1D1;  /* Branco para a descrição */
+  line-height: 1.5;
+}
+
+/* Informações sobre o papel do agente */
+.agent-info p strong {
+  font-weight: bold;
+  color: #00D4FF; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .agents-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .agent-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
