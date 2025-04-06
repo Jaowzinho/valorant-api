@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+Valorant Agents Viewer
+Este projeto é uma aplicação React que consome a API pública do Valorant para exibir os agentes jogáveis do jogo. A aplicação mostra informações como nome, imagem, descrição e papel de cada agente, com os dados traduzidos para português brasileiro.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🛠 Tecnologias Utilizadas
+React: Biblioteca JavaScript para construção de interfaces de usuário.
 
-## Available Scripts
+Axios: Cliente HTTP baseado em Promises para fazer requisições à API.
 
-In the project directory, you can run:
+CSS: Estilização da aplicação.
 
-### `npm start`
+Valorant API: Fonte oficial de dados dos personagens do jogo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+⚙️ Funcionalidades
+Exibição da lista de agentes jogáveis do Valorant.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Visualização de nome, descrição, papel e imagem de cada agente.
 
-### `npm test`
+Filtro automático para remover duplicatas e agentes não jogáveis.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Conteúdo exibido em português brasileiro através do parâmetro ?language=pt-BR.
 
-### `npm run build`
+▶️ Como Executar o Projeto
+Siga os passos abaixo para rodar a aplicação localmente:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone o repositório:
+bash
+Copiar
+Editar
+git clone https://github.com/seu-usuario/valorant-agents-viewer.git
+2. Acesse o diretório do projeto:
+bash
+Copiar
+Editar
+cd valorant-agents-viewer
+3. Instale as dependências:
+bash
+Copiar
+Editar
+npm install
+4. Inicie o servidor de desenvolvimento:
+bash
+Copiar
+Editar
+npm start
+O aplicativo estará disponível em http://localhost:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📁 Estrutura do Projeto
+csharp
+Copiar
+Editar
+public/             # Arquivos públicos
+src/
+├── components/     # Componentes reutilizáveis (futuramente)
+├── pages/          # Telas principais (opcional)
+├── services/       # Funções de integração com a API (opcional)
+├── App.js          # Componente principal
+├── App.css         # Estilos gerais
+└── index.js        # Ponto de entrada da aplicação
+📜 Scripts Disponíveis
+bash
+Copiar
+Editar
+npm start
+Executa o aplicativo em modo de desenvolvimento.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copiar
+Editar
+npm run build
+Gera uma versão otimizada da aplicação para produção.
 
-### `npm run eject`
+bash
+Copiar
+Editar
+npm test
+Executa os testes (caso implementados).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+Copiar
+Editar
+npm run eject
+Remove a configuração padrão do Create React App. Atenção: operação irreversível!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🤝 Contribuição
+Faça um fork do projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Crie uma branch para sua feature:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+bash
+Copiar
+Editar
+git checkout -b feature/nova-feature
+Faça suas alterações e commit:
 
-## Learn More
+bash
+Copiar
+Editar
+git commit -m 'Adiciona nova feature'
+Envie para o repositório remoto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+Copiar
+Editar
+git push origin feature/nova-feature
+Abra um Pull Request
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📄 Licença
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-### Code Splitting
+📚 Recursos Adicionais
+Documentação da Valorant API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Documentação do React
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Create React App
